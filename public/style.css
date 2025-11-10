@@ -1,0 +1,244 @@
+/* === Base Styles (From Original) === */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Changed to column */
+    justify-content: center; /* Changed to center */
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3498db;
+    padding: 0 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.75rem;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+button {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.message {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none; 
+}
+
+.message.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    display: block;
+}
+
+.message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    display: block;
+}
+
+/* === Admin Styles === */
+
+.admin-button {
+    background-color: #2ecc71;
+    margin-bottom: 1rem;
+}
+.admin-button:hover {
+    background-color: #27ae60;
+}
+
+#meditatorList {
+    margin-top: 2rem;
+}
+
+.user-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.user-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.user-card p {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.card-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-actions button {
+    width: auto;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+}
+.edit-btn:hover {
+    background-color: #e67e22;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* === Modal Styles === */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 2.5rem;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* === NEWLY ADDED STYLE FOR ADMIN LINK === */
+.admin-link-container {
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.admin-link-container a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.admin-link-container a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}

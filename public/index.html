@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditator Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>🧘 Meditator Registration</h1>
+        <p>Register for upcoming programs.</p>
+
+        <form id="registrationForm">
+            <fieldset>
+                <legend>Your Details</legend>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id="number" name="number">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select Programs</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="shambhavi" name="shambhavi">
+                    <label for="shambhavi">Shambhavi Mahamudra</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="bhutta_shuddhi" name="bhutta_shuddhi">
+                    <label for="bhutta_shuddhi">Bhutta Shuddhi</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hatha_yoga" name="hatha_yoga">
+                    <label for="hatha_yoga">Hatha Yoga (Surya Kriya, etc.)</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="bhava_spandana" name="bhava_spandana">
+                    <label for="bhava_spandana">Bhava Spandana</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="shoonya" name="shoonya">
+                    <label for="shoonya">Shoonya Intensive</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" id="submitButton">Register</button>
+        </form>
+
+        <div id="message" class="message"></div>
+    </main>
+
+    <div class="admin-link-container">
+        <a href="admin.html">Manage Registrations (Admin Dashboard)</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
